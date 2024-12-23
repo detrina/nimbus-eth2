@@ -93,7 +93,7 @@ func peekColumnIndices*(quarantine: DataColumnQuarantine,
 func gatherDataColumns*(quarantine: DataColumnQuarantine,
                        digest: Eth2Digest): 
                        seq[ref DataColumnSidecar] =
-  # Returns the current data columns quried by a 
+  # Returns the current data columns queried by a 
   # block header
   var columns: seq[ref DataColumnSidecar]
   for i in quarantine.custody_columns:
